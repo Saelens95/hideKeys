@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hidekb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPG-Tk-Qsn">
+                                <rect key="frame" x="20" y="44" width="374" height="1100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwr-lD-WtQ">
+                                        <rect key="frame" x="109" y="92" width="156" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="b2B-0S-88W"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEo-Do-lWl">
+                                        <rect key="frame" x="109" y="50" width="156" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="f5F-Kj-JU6"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-iM-dlt">
+                                        <rect key="frame" x="109" y="134" width="34" height="30"/>
+                                        <state key="normal" title="View"/>
+                                        <connections>
+                                            <action selector="btnView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYE-ek-nj1"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m46-8P-EXj">
+                                        <rect key="frame" x="109" y="8" width="156" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="iMi-ug-P1s"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ru-nt-Bbu">
+                                        <rect key="frame" x="231" y="134" width="34" height="30"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5TS-tM-75W"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bhq-eg-uNM">
+                                        <rect key="frame" x="67" y="908" width="240" height="184"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="fWY-RP-18K"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-LO-Rvg">
+                                        <rect key="frame" x="67" y="870" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4c-l0-AWP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m46-8P-EXj" firstAttribute="centerX" secondItem="WPG-Tk-Qsn" secondAttribute="centerX" id="66c-9g-SL7"/>
+                                    <constraint firstItem="m46-8P-EXj" firstAttribute="top" secondItem="WPG-Tk-Qsn" secondAttribute="top" constant="8" id="9dq-cd-moe"/>
+                                    <constraint firstItem="dwr-lD-WtQ" firstAttribute="centerX" secondItem="Bhq-eg-uNM" secondAttribute="centerX" id="AEe-Hm-4yj"/>
+                                    <constraint firstItem="xlq-LO-Rvg" firstAttribute="leading" secondItem="Bhq-eg-uNM" secondAttribute="leading" id="AIh-G5-Ku1"/>
+                                    <constraint firstItem="Bhq-eg-uNM" firstAttribute="top" secondItem="xlq-LO-Rvg" secondAttribute="bottom" constant="8" id="FuV-1L-lEH"/>
+                                    <constraint firstItem="m46-8P-EXj" firstAttribute="trailing" secondItem="kEo-Do-lWl" secondAttribute="trailing" id="Mrv-eU-Irk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bhq-eg-uNM" secondAttribute="trailing" constant="67" id="Nvi-Oo-Atw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bhq-eg-uNM" secondAttribute="bottom" constant="8" id="T0m-0f-O53"/>
+                                    <constraint firstItem="nUL-iM-dlt" firstAttribute="baseline" secondItem="4ru-nt-Bbu" secondAttribute="baseline" id="Thx-WI-m9h"/>
+                                    <constraint firstItem="dwr-lD-WtQ" firstAttribute="trailing" secondItem="4ru-nt-Bbu" secondAttribute="trailing" id="ULV-a1-12t"/>
+                                    <constraint firstItem="kEo-Do-lWl" firstAttribute="top" secondItem="m46-8P-EXj" secondAttribute="bottom" constant="8" id="VWV-YF-bRz"/>
+                                    <constraint firstItem="nUL-iM-dlt" firstAttribute="top" secondItem="dwr-lD-WtQ" secondAttribute="bottom" constant="8" id="eDS-jP-06R"/>
+                                    <constraint firstItem="dwr-lD-WtQ" firstAttribute="leading" secondItem="nUL-iM-dlt" secondAttribute="leading" id="hjF-kk-DC0"/>
+                                    <constraint firstItem="4ru-nt-Bbu" firstAttribute="leading" secondItem="nUL-iM-dlt" secondAttribute="trailing" constant="88" id="iSQ-IQ-y99"/>
+                                    <constraint firstItem="xlq-LO-Rvg" firstAttribute="leading" secondItem="WPG-Tk-Qsn" secondAttribute="leading" constant="67" id="jFt-0R-zkc"/>
+                                    <constraint firstItem="kEo-Do-lWl" firstAttribute="trailing" secondItem="dwr-lD-WtQ" secondAttribute="trailing" id="lTn-eF-VmA"/>
+                                    <constraint firstItem="xlq-LO-Rvg" firstAttribute="top" secondItem="WPG-Tk-Qsn" secondAttribute="top" constant="870" id="lvY-NC-cEi"/>
+                                    <constraint firstItem="kEo-Do-lWl" firstAttribute="leading" secondItem="dwr-lD-WtQ" secondAttribute="leading" id="rtM-Ab-f8x"/>
+                                    <constraint firstItem="dwr-lD-WtQ" firstAttribute="top" secondItem="kEo-Do-lWl" secondAttribute="bottom" constant="8" id="tJK-BS-6Db"/>
+                                    <constraint firstItem="m46-8P-EXj" firstAttribute="leading" secondItem="kEo-Do-lWl" secondAttribute="leading" id="tWW-8P-3PW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WPG-Tk-Qsn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TWL-K3-YyW"/>
+                            <constraint firstItem="WPG-Tk-Qsn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U3S-Xg-WXv"/>
+                            <constraint firstAttribute="bottom" secondItem="WPG-Tk-Qsn" secondAttribute="bottom" constant="-248" id="nx1-SN-O2V"/>
+                            <constraint firstItem="WPG-Tk-Qsn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sHN-4c-Wea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScrollView" destination="WPG-Tk-Qsn" id="iW8-uR-l8m"/>
+                        <outlet property="btnBack" destination="xlq-LO-Rvg" id="XG0-5t-EEz"/>
+                        <outlet property="txtEmail" destination="dwr-lD-WtQ" id="fco-wZ-TCy"/>
+                        <outlet property="txtFirst" destination="m46-8P-EXj" id="qN1-pp-QdL"/>
+                        <outlet property="txtLast" destination="kEo-Do-lWl" id="SJU-6R-MDw"/>
+                        <outlet property="txtView" destination="Bhq-eg-uNM" id="m8u-7B-ee1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="60.9375"/>
+        </scene>
+    </scenes>
+</document>
